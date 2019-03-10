@@ -1,7 +1,6 @@
-jobs:
-  machine:
-    node:
-      version: 0.10
+machine:
+  node:
+    version: 0.10
 
 test:
   override:
