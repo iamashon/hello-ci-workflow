@@ -2,11 +2,10 @@ version: 2
 
 jobs:
   build:
-    //node:
-    //  version: 0.10
+    node:
+      - version: 0.10
     //machine: true
-    machine:
-      image: circleci/node:4.8.2-jessie
+    machine: true
     steps:
       - run:
           name: Testing
