@@ -2,11 +2,9 @@ version: 2
 
 jobs:
   build:
-    node:
-      - version: 0.10
     //machine: true
-    machine:
-      image: node
+    docker:
+      - image: node:8.2.1
     steps:
       - run:
           name: Testing
