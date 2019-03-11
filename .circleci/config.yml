@@ -2,8 +2,11 @@ version: 2
 
 jobs:
   build:
-    node:
-      version: 0.10
+    //node:
+    //  version: 0.10
+    machine:
+      - node:
+          version: 0.10
     steps:
       - run:
           name: Testing
