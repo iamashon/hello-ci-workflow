@@ -6,6 +6,8 @@ jobs:
     docker:
       - image: node:8.2.1
     steps:
+      - checkout
+      - run: npm install
       - run:
           name: Testing
           command: ./node_modules/.bin/mocha
