@@ -1,5 +1,7 @@
+version: 2
+
 jobs:
-  machine:
+  build:
     node:
       version: 0.10
 
