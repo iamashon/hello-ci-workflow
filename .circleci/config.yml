@@ -5,8 +5,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: build
-        command: docker build -t hello-ci-workflow .
+          name: build
+          command: docker build -t hello-ci-workflow .
       - run: ./node_modules/.bin/mocha
       - run: docker run -d -p 3000:3000 hello-ci-workflow; sleep 10
       - run: curl --retry 10 --retry-delay 5 -v http://localhost:3000
