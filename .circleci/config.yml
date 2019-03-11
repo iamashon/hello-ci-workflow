@@ -5,8 +5,8 @@ jobs:
     //node:
     //  version: 0.10
     //machine: true
-    docker:
-      - image: "circleci/node:9.6.1"
+    machine:
+      image: circleci/node:0.1
     steps:
       - run:
           name: Testing
