@@ -5,6 +5,7 @@ jobs:
     //node:
     //  version: 0.10
     machine: true
+      - image: "circleci/node:9.6.1"
     steps:
       - run:
           name: Testing
